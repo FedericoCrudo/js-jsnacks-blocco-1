@@ -2,7 +2,7 @@
 var primaParola=prompt("Inserisci la prima parola") ;
 var secondaParola=prompt("Inserisci la seconda parola") ;
 
-//controllo numero maggiore
+//controllo parola più lunga
 if(primaParola.length>secondaParola.length){
    document.getElementById("message").innerHTML='La prima  immessa è piu lunga  '+primaParola+'  '+secondaParola;
    }
