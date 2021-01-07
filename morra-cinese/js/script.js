@@ -3,7 +3,7 @@
     var lista=["sasso","carta","forbice"];
     var puntiU=0;
     var puntiC=0;
-    vari=0;
+    
     var message;
     var esito;
     var sent=false;
@@ -12,9 +12,25 @@
      var sceltaU=prompt("Scegli:Sasso,Carta,Forbice").toLowerCase();
      sceltaC=lista[generaRandom(0,2)];   
         if(sceltaU==""){  
-         alert("Si prega di inserire solo i valori indicati(forbice,sasso,carta)");
+         document.getElementById("message").innerHTML="";
+         void element.offsetWidth
+         document.getElementById("message").innerHTML="<span class='text'>Si prega di compilare tutti i campi</span>";
+         document.getElementById("scelta").className="";  
+          void element.offsetWidth; //per refreshare e rendere la pagina più dinamica
+         document.getElementById("scelta").className="empity"; 
+          document.getElementById("resultU").src = "";
+         document.getElementById("resultC").src="";
     }
     else{
+        document.getElementById("message").innerHTML="";
+        document.getElementById("scelta").className="";
+        void element.offsetWidth; //per refreshare e rendere la pagina più dinamica
+        document.getElementById("scelta").className="check";  
+        var sceltaU=document.getElementById("scelta").value;
+        var sceltaC=lista[generaRandom(0,2)] 
+        document.getElementById("resultU").src = "img/"+sceltaU+".svg";
+        document.getElementById("resultC").src="img/"+sceltaC+".svg";
+
             if(sceltaU=="sasso"&& sceltaC=="carta"||
                sceltaU=="carta"&& sceltaC=="forbice"||
                sceltaU=="forbice"&&sceltaC=="sasso" ){
