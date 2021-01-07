@@ -11,7 +11,8 @@ var element = document.getElementById('gioca');
     var sceltaU=document.getElementById("scelta").value;
     console.log(sceltaU);
    if(puntiU==4 ||puntiC==4){
-   
+     puntiU=0;
+     puntiC=0;
    }
    else{
 
